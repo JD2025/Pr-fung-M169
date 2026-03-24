@@ -3,8 +3,8 @@
 Webseite Portainer: localhost:9443
 Docker Dokumentation: https://hub.docker.com
 
--d = Dämon
--v = Volume
+- -d = Dämon
+- -v = Volumes
 
 ### Netzwerk erstellen:
 `docker network create "name"`
