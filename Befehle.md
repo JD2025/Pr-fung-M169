@@ -1,4 +1,4 @@
-# Befehle anhand des Beispiel  Wordpress
+# Befehle anhand Beispielen
 
 Webseite Portainer: localhost:9443
 Docker Dokumentation: https://hub.docker.com
