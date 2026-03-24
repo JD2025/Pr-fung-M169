@@ -17,3 +17,6 @@ Docker Dokumentation: https://hub.docker.com
 
 ### Wordpress in Betrieb nehmen
 `docker run -d --name wordpress --network testnet -h wordpres-titel -v wp-html:/var/www/html/wp-content -p 8081:80 -e WORDPRESS_DB_HOST=mariadb-test -e WORDPRESS_DB_USER=wpuser -e WORDPRESS_DB_NAME=wp -e WORDPRESS_DB_PASSWORD=geheim wordpress`
+
+### Nextcloud in Betrieb nehmen
+`docker run -d --name nextcloud --network testnet -p 8081:80 -v nextcloud-data:/var/www/html -e MYSQL_HOST=mariadb-test -e MYSQL_DATABASE=nextcloud -e MYSQL_USER=wpuser -e MYSQL_PASSWORD=geheim nextcloud`
