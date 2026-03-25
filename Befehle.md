@@ -23,15 +23,3 @@ Docker Dokumentation: https://hub.docker.com
 
 ### Joomla in Betrieb nehemen
 `docker run -d --name joomla --network testnet -p 8086:80 -v joomladata:/var/www/html -e JOOMLA_DB_HOST=mariadb-test -e JOOMLA_DB_USER=wpuser -e JOOMLA_DB_PASSWORD=geheim -e JOOMLA_DB_NAME=wp joomla`
-
-### Container administrieren:
-
-Platzbedarf: docker system df
-Container löschen: docker rm containerID
-image löschen: docker rmi imagename
-volumes anzeigen: docker volume ls
-volume löschen: docker volume rm volumename
-Gesamtüberblick: docker ps -a
-Images anzeigen: docker images
-Netzwerk anzeigen: docker network ls
-Nicht verwendete Container, Netzwerk und Images löschen: docker system prune
