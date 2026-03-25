@@ -20,3 +20,6 @@ Docker Dokumentation: https://hub.docker.com
 
 ### Nextcloud in Betrieb nehmen
 `docker run -d --name nextcloud --network testnet -p 8081:80 -v nextcloud-data:/var/www/html -e MYSQL_HOST=mariadb-test -e MYSQL_DATABASE=nextcloud -e MYSQL_USER=wpuser -e MYSQL_PASSWORD=geheim nextcloud`
+
+### Joomla in Betrieb nehemen
+`docker run -d --name joomla --network testnet -p 8086:80 -v joomladata:/var/www/html -e JOOMLA_DB_HOST=mariadb-test -e JOOMLA_DB_USER=wpuser -e JOOMLA_DB_PASSWORD=geheim -e JOOMLA_DB_NAME=wp joomla`
